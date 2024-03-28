@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_ig">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/instagram" />
+
+    <EditText
+        android:id="@+id/edit_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_logo"
+        android:layout_marginHorizontal="30dp"
+        android:padding="20dp"
+        android:singleLine="true"
+        android:elevation="20dp"
+        android:background="#27FBFAFA"
+        android:hint="Username"
+        android:textColorHint="#B4FFFFFF"
+        android:inputType="text"
+        android:imeOptions="actionNext" />
+
+    <EditText
+        android:id="@+id/edit_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_user"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="25dp"
+        android:background="#27FBFAFA"
+        android:elevation="20dp"
+        android:hint="Password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:paddingTop="20dp"
+        android:singleLine="true"
+        android:textColorHint="#B4FFFFFF" />
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_pass"
+        android:id="@+id/id_login"
+        android:background="@drawable/btn_ig"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="25dp"
+        android:padding="20dp"
+        android:text="Log in"
+        android:textColor="#45FFFFFF" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_login"
+        android:id="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx_text1"
+            android:textColor="#E8FFFFFF"
+            android:text="Forgot your login details?" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_toRightOf="@+id/tx_text1"
+            android:text="Get help signing in."
+            android:textColor="#E8FFFFFF"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/all_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/line1"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/line_ig" />
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#DCFFFFFF"
+            android:layout_toRightOf="@+id/line1"
+            android:text="OR" />
+
+        <TextView
+            android:layout_toRightOf="@+id/line2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/line_ig" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/all_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <ImageView
+
+            android:id="@+id/img_fb"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/fb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/img_fb"
+            android:text="Log in with Facebook"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/line_ig"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:background="#26FBFAFA">
+        <TextView
+            android:id="@+id/bx_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginLeft="70dp"
+            android:text="Don't have an account?" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bx_text1"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:text="Sign up."
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

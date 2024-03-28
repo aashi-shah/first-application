@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".SeekBarActivity">
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/tangerine"
+        android:thumbTint="@color/tangerine"
+        />
+    <!--        android:progressDrawable="@drawable/bg_ig"-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_seekbar"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#6A6969"
+        android:textSize="30dp"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:progressTint="@color/tangerine"
+        android:id="@+id/stars"/>
+<!--        android:background="@drawable/bg_ig"-->
+    <!--        android:progressDrawable="@drawable/bg_ig"-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_stars"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#6A6969"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display rating"
+        android:textColor="#fff"/>
+
+</LinearLayout>

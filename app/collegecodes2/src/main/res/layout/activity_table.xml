@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    tools:context=".Table_activity">
+    <TextView
+        android:text="Table Layout"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="50dp"/>
+    <TableLayout
+        android:stretchColumns="1">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1E9E92"
+            android:padding="20dp"
+            android:text="Text 1"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#75009688"
+            android:padding="20dp"
+            android:text="Text 2"
+            android:textColor="#000"
+            android:textSize="14dp" />
+    </TableRow>
+    </TableLayout>
+    <TableLayout
+            android:stretchColumns="0" >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#1E9E92"
+                android:padding="20dp"
+                android:text="Text 1"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#75009688"
+                android:padding="20dp"
+                android:text="Text 2"
+                android:textColor="#000"
+                android:textSize="14dp" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:stretchColumns="*" >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#1E9E92"
+                android:padding="20dp"
+                android:text="Text 1"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#75009688"
+                android:padding="20dp"
+                android:text="Text 2"
+                android:textColor="#000"
+                android:textSize="14dp" />
+        </TableRow>
+    </TableLayout>
+</TableLayout>

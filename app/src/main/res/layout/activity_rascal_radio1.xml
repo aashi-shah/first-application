@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rascal_radio1_Activity">
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/box_1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#FDFDFE" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_menu_24"
+            android:drawableTint="#D22129"/>
+        <ImageView
+            android:id="@+id/img_rr"
+            android:layout_width="178dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/rascal_radio" />
+
+        <ImageView
+            android:layout_width="76dp"
+            android:layout_height="111dp"
+            android:layout_marginRight="-1dp"
+            android:layout_toLeftOf="@+id/img_rr"
+            android:src="@drawable/rascal_radio_1" />
+        <View
+            android:layout_toRightOf="@+id/img_rr"
+            android:layout_width="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_height="20dp"
+            android:background="#000" />
+        <View
+            android:layout_toLeftOf="@+id/img_rr"
+            android:layout_width="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_height="20dp"
+            android:background="#000" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="0.5"
+        android:layout_below="@+id/r1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:background="#D22129" />
+        <android.widget.Button
+            android:id="@+id/btn_rr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:textStyle="italic"
+            android:textSize="30dp"
+            android:text="Orrin Woodward"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:background="@drawable/shape1_rr"
+            />
+        <android.widget.Button
+            android:layout_below="@+id/btn_rr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="true"
+            android:textStyle="italic"
+            android:textSize="30dp"
+            android:text="Subject search"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:background="@drawable/shape1_rr"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:weightSum="0.5"
+        android:id="@+id/r3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r2">
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_rr2"
+            android:layout_marginTop="20dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:text="Orrin Woodward"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#C1C7D3" />
+    </RelativeLayout>
+</RelativeLayout>

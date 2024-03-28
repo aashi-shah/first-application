@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.firstapplication">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fb"
+        android:label="first application"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FirstApplication">
+        <activity
+            android:name=".ListviewActivity"
+            android:exported="false" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBa7H6u57TUxpS8UZNmY6Gl3iBXGwhsEAg" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="true"
+            android:label="MapsActivity" />
+        <activity
+            android:name=".AlarmActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SharedPrefActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Nav_Activity"
+            android:exported="false"
+            android:label="@string/title_activity_nav"
+            android:theme="@style/Theme.FirstApplication.NoActionBar" />
+        <activity
+            android:name=".Whatsapp_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Tab_Activity"
+            android:exported="false"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/Theme.FirstApplication.NoActionBar" />
+        <activity
+            android:name=".Bottommenu_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Menu_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Java_Fragment_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Basic_Fragment_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".B_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".A_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Customgrid_Value_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Custom_Gridview_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Custom_Listview_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Videoview_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Webview_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Gridview_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".List_Grid_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Simple_listview_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Spinner_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Date_Time_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Alert_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ShowBarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Splash2_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ImagePickActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Home_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".Instagram_activity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="true" />
+        <activity
+            android:name=".Rascal_Radio_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Rascal_radio1_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Lumia_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".SeekBarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Splash_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".MyService" />
+
+        <receiver android:name=".MyBroadcast" />
+    </application>
+
+</manifest>

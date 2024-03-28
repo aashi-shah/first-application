@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_24" />
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/main_pic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_login"
+        android:text="Login"
+        android:textStyle="bold"
+        android:layout_below="@+id/img_logo"
+        android:layout_marginLeft="30dp"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_sign"
+        android:text="Sign In"
+        android:textColor="#393838"
+        android:layout_below="@+id/tv_login"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sign"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="20dp"
+        android:elevation="20dp"
+        android:hint="Email"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textColorHint="#000" />
+
+    <EditText
+        android:id="@+id/edit_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_email"
+        android:textColor="#000"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="20dp"
+        android:textColorHint="#000"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:elevation="20dp"
+        android:hint="Password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:singleLine="true" />
+
+    <android.widget.Button
+        android:id="@+id/edt_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_pass"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn"
+        android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="50dp"
+        android:text="Login"
+        android:textColor="#fff" />
+
+    <android.widget.Button
+
+        android:id="@+id/edt_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn"
+        android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="50dp"
+        android:text="Go"
+        android:textColor="#fff" />
+    <!--<LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_pass"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="30dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Login"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Register"
+            />
+    </LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ac"
+            android:textColor="#000"
+            android:text="Don't have an account ?"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_ac"/>
+    </RelativeLayout>
+</RelativeLayout>

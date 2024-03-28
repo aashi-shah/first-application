@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Alert_Activity">
+
+    <Button
+        android:id="@+id/alert_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="AlertClick"
+        android:layout_marginLeft="20dp"
+        android:text="Alert Dialog"
+        />
+
+    <Button
+        android:id="@+id/alert_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="AlertClick"
+        android:layout_marginLeft="20dp"
+        android:text="Custom alert"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/toast_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="AlertClick"
+        android:layout_marginLeft="20dp"
+        android:text="Custom toast"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
